@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const GameBoard = (props) => {
   //   const [boardState, setBoardState] = useState([
@@ -30,7 +30,7 @@ const GameBoard = (props) => {
     // console.log(boardIndex);
     // console.log(props.boardState);
     if (props.boardState[boardIndex] !== "" || !props.gameState) {
-      console.log("asd");
+      // console.log("asd");
       return;
     }
     e.target.innerHTML = props.currentPlayer;
@@ -46,15 +46,15 @@ const GameBoard = (props) => {
 
   return (
     <div className="grid-container ">
-      <div className="grid-item" id="0" onClick={clickHandler}></div>
-      <div className="grid-item" id="1" onClick={clickHandler}></div>
-      <div className="grid-item" id="2" onClick={clickHandler}></div>
-      <div className="grid-item" id="3" onClick={clickHandler}></div>
-      <div className="grid-item" id="4" onClick={clickHandler}></div>
-      <div className="grid-item" id="5" onClick={clickHandler}></div>
-      <div className="grid-item" id="6" onClick={clickHandler}></div>
-      <div className="grid-item" id="7" onClick={clickHandler}></div>
-      <div className="grid-item" id="8" onClick={clickHandler}></div>
+      <div className="grid-item r1c1" id="0" onClick={clickHandler}></div>
+      <div className="grid-item r1c2" id="1" onClick={clickHandler}></div>
+      <div className="grid-item r1c3" id="2" onClick={clickHandler}></div>
+      <div className="grid-item r2c1" id="3" onClick={clickHandler}></div>
+      <div className="grid-item r2c2" id="4" onClick={clickHandler}></div>
+      <div className="grid-item r2c3" id="5" onClick={clickHandler}></div>
+      <div className="grid-item r3c1" id="6" onClick={clickHandler}></div>
+      <div className="grid-item r3c2" id="7" onClick={clickHandler}></div>
+      <div className="grid-item r3c3" id="8" onClick={clickHandler}></div>
     </div>
   );
 };

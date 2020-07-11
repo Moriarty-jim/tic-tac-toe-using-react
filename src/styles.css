@@ -3,18 +3,32 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  background-color: #dee;
+  font-family: "Patrick Hand SC", cursive;
 }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+}
+.main-container {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2em;
   line-height: 1.4;
+  background: url("./images/paper-you-can-write-on.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: contain;
+  /* background-size: cover; */
+  width: 600px;
+  /* min-width: 600px; */
 }
-
-a {
-  color: #333;
-  text-decoration: none;
+/* @media (min-width: 600px) {
+  .main-container {
+  }
+  } */
+.main-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
-
 .grid-container {
   display: grid;
   grid-template-rows: [lr1] 1fr [lr2] 1fr [lr3] 1fr [lr4];
@@ -22,8 +36,8 @@ a {
   /* background-color: rgb(255, 245, 107); */
   padding: 10px;
   margin: 0 auto;
-  width: 30vw;
-  height: 30vw;
+  width: 300px;
+  height: 300px;
 }
 .grid-item {
   /* background-color: rgb(255, 245, 107); */
@@ -32,9 +46,88 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px black;
 }
 .grid-item:hover {
   cursor: pointer;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+}
+.btn-restart {
+  float: right;
+  border: none;
+  font-size: 1.2em;
+  background-color: inherit;
+  padding-right: 1.2em;
+}
+.btn-restart:hover {
+  color: red;
+  cursor: pointer;
+}
+.game-stats {
+  margin-top: 50px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.turn-indicator {
+  align-self: center;
+}
+.r1c1 {
+  border-right: solid 3px #41403e;
+  border-bottom: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 15px 5px 255px/ 0 255px 15px 15px;
+}
+
+.r1c2 {
+  border-right: solid 3px #41403e;
+  border-bottom: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 10px 5px 0/ 0 255px 15px 15px;
+}
+.r1c3 {
+  border-bottom: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 255px 0/ 0 0 15px 25px;
+}
+.r2c1 {
+  border-right: solid 3px #41403e;
+  border-bottom: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 15px 5px 255px/ 0 0 10px 15px;
+}
+.r2c2 {
+  border-right: solid 3px #41403e;
+  border-bottom: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 5px 5px/ 0 5px 0 0;
+}
+.r2c3 {
+  border-bottom: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 255px 0/ 0 0 20px 25px;
+}
+.r3c1 {
+  border-right: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 5px 0/ 0 5px 125px 0;
+}
+.r3c2 {
+  border-right: solid 3px #41403e;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 10px 0/ 0 5px 125px 0;
+}
+@media (max-width: 900px) {
+  .grid-container {
+    width: 40vw;
+    height: 40vw;
+  }
 }

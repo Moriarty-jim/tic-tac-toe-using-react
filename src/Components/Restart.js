@@ -1,12 +1,16 @@
 import React from "react";
 
 const Restart = (props) => {
-  const onClickRestart = (e) => {
-    console.log("restart");
-    props.restartHandler(e);
-  };
+  //   const onClickRestart = (e) => {
+  //     console.log("restart");
+  //     props.restartHandler();
+  //   };
 
-  return <button onClick={onClickRestart}>Restart</button>;
+  return (
+    <button className="btn-restart" onClick={props.restartHandler}>
+      Restart
+    </button>
+  );
 };
 
 export default Restart;

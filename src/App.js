@@ -20,13 +20,14 @@ const App = () => {
   const [firstTurn, setFirstTurn] = useState(true);
   const [gameStats, setGameStats] = useState("");
   const [restartState, setRestartState] = useState(false);
+  const [gameCount, setGameCount] = useState(1);
 
   const boardStateHandler = (e) => {
     const boardIndex = e.target.id;
     setBoardState({ ...boardState, [boardIndex]: currentPlayer });
   };
 
-  const restartHandler = (e) => {
+  const restartHandler = () => {
     console.log("app restart");
     setRestartState(true);
     setBoardState({
@@ -44,6 +45,7 @@ const App = () => {
     setCurrentPlayer("X");
     setFirstTurn(true);
     setGameStats(`its ${currentPlayer}'s turn`);
+    setGameCount(gameCount + 1);
   };
 
   useEffect(() => {
@@ -58,7 +60,6 @@ const App = () => {
     } else {
       setFirstTurn(false);
     }
-
     // console.log(boardState);
   }, [boardState]);
 
@@ -66,8 +67,16 @@ const App = () => {
     setGameStats(`its ${currentPlayer}'s turn`);
   }, [currentPlayer]);
 
+  useEffect(() => {
+    if (gameCount % 2 === 0) {
+      setCurrentPlayer("O");
+    } else {
+      setCurrentPlayer("X");
+    }
+  }, [gameCount]);
+
   return (
-    <div>
+    <div className="main-container">
       <h1>TIC TAC TOE</h1>
       <GameBoard
         boardStateHandler={boardStateHandler}
@@ -115,7 +124,7 @@ const validation = (
     if (a === "" || b === "" || c === "") {
       continue;
     }
-    if (a == b && b == c) {
+    if (a === b && b === c) {
       gameWon = true;
       break;
     }
