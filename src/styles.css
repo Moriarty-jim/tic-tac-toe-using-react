@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #dee;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: [lr1] 1fr [lr2] 1fr [lr3] 1fr [lr4];
+  grid-template-columns: [lc1] 1fr [lc2] 1fr [lc3] 1fr [lc4];
+  /* background-color: rgb(255, 245, 107); */
+  padding: 10px;
+  margin: 0 auto;
+  width: 30vw;
+  height: 30vw;
+}
+.grid-item {
+  /* background-color: rgb(255, 245, 107); */
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
+.grid-item:hover {
+  cursor: pointer;
+  background-color: antiquewhite;
+}
