@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tic-tac-toe-using-react/static/css/main.b24d6e50.chunk.css",
+    "main.js": "/tic-tac-toe-using-react/static/js/main.9fdbf791.chunk.js",
+    "main.js.map": "/tic-tac-toe-using-react/static/js/main.9fdbf791.chunk.js.map",
+    "runtime-main.js": "/tic-tac-toe-using-react/static/js/runtime-main.939e2876.js",
+    "runtime-main.js.map": "/tic-tac-toe-using-react/static/js/runtime-main.939e2876.js.map",
+    "static/js/2.d3d17304.chunk.js": "/tic-tac-toe-using-react/static/js/2.d3d17304.chunk.js",
+    "static/js/2.d3d17304.chunk.js.map": "/tic-tac-toe-using-react/static/js/2.d3d17304.chunk.js.map",
+    "index.html": "/tic-tac-toe-using-react/index.html",
+    "precache-manifest.9bf5b5954843a60e5e0ed5c922c20804.js": "/tic-tac-toe-using-react/precache-manifest.9bf5b5954843a60e5e0ed5c922c20804.js",
+    "service-worker.js": "/tic-tac-toe-using-react/service-worker.js",
+    "static/css/main.b24d6e50.chunk.css.map": "/tic-tac-toe-using-react/static/css/main.b24d6e50.chunk.css.map",
+    "static/js/2.d3d17304.chunk.js.LICENSE.txt": "/tic-tac-toe-using-react/static/js/2.d3d17304.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/tic-tac-toe-using-react/static/media/paper-you-can-write-on.98e79d37.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.939e2876.js",
+    "static/js/2.d3d17304.chunk.js",
+    "static/css/main.b24d6e50.chunk.css",
+    "static/js/main.9fdbf791.chunk.js"
+  ]
+}
