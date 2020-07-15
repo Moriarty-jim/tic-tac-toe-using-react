@@ -1,3 +1,4 @@
-this is a simple game of tictactoe using react
+This is a simple game of tictactoe using react
 
-ive also added a gamecount state so that the starting player alternates between X and O
+Ive also added a gamecount state so that the starting player alternates between X and O
+># **[PLAY](https://robin-shrestha.github.io/tic-tac-toe-using-react/)**
